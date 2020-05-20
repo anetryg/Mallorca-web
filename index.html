@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Mallorca">
+    <meta name="description" content="Popis ostrova Mallorca a jeho zajímavých oblastí">
+    <meta name="author" content="Aneta Ryglová">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mallorca</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+    crossorigin=""></script>
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+    crossorigin=""></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    
+    <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.1/dist/leaflet.css" />
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/MarcChasse/leaflet.ScaleFactor/master/leaflet.scalefactor.min.css">
+
+    <style>
+        .leaflet-popup-tip {
+            width: 0px;
+            height: 0px;
+        }
+
+        .leaflet-popup-content-wrapper {
+            background-color: #ededed;
+        }
+        
+        .leaflet-popup-content img { 
+            margin: 0 auto; display:block; 
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>MALLORCA</h1>
+    </header>
+
+<ul class="menu">
+    <li><a href="#aboutmallorca">O Mallorce</a></li>
+    <li><a href="#interestingplaces">Zajímavá místa</a></li>
+    <li><a href="#beaches">Nejkrásnější pláže</a></li>
+    <li><a href="#weather">Počasí a podnebí</a></li>
+    <li><a href="#orthodrome">Výpočet ortodromy</a></li>
+    <li><a href="#map">Mapa</a></li>
+</ul>
+
+
+    <section class="line1" id="aboutmallorca">
+        <div class="sirka_textu"><br>
+        <h2>O MALLORCE&nbsp; <img class="plaz2" src="obrazky/drawing4.svg" height="30" width="30" alt="Ikona o Mallorce"></h2><br>
+        
+            <img class= "mapa" src= "obrazky/map.jpg" alt= "mapa Mallorca" height="250" width="250">
+
+            <p>Mallorca, španělský ostrov ve Středozemním moři, se nachází asi 180 kilometrů od východního pobřeží Pyrenejského poloostrova a je součástí Baleárského souostroví (Mallorca, Menorca, Ibiza a Formentera). Ze všech Baleárských ostrovů je právě Mallorca ten největší, což vyplývá již z latinského označení ostrova "insula maior" - největší ostrov.</p>
+
+            <p>Ostrov Mallorca má přibližně kosodélníkový tvar, rozkládá se na ploše 3,640.11 km2 a jeho pobřeží dosahuje celkové délky 623 kilometrů. Vzdálenost od severu k jihu je 78 km a od západu k východu 96 km.</p>
+        </div>
+    </section>
+
+
+    <section class="line2" id="interestingplaces">
+        <div class="sirka_textu"><br>
+        <h2>ZAJÍMAVÁ MÍSTA&nbsp; <img class="plaz2" src="obrazky/drawing2.svg" width="30" height="30" alt="Ikona zajimava mista"></h2><br>
+
+            <h3>Katedrála Panny Marie v Palma de Mallorca</h3>
+
+            <img class="palma" src="obrazky/palma_200x250.png" alt="Katedrala Panny Marie v Palma de Mallorca" height="200" width="240">
+
+                <p>Panorama palmského přístavu Puerto de Palma zdobí 121 metrů dlouhá a 55 metrů široká gotická katedrála, která patří mezi největší katedrály tohoto stylu v Evropě. Z jejího stropu, sahajícího do výšky 44 metrů, vystupují dvě hlavní věže, každá 67 a půl metru vysoká, zvonice s devíti zvony a na jejím průčelí se vyjímají obrovská, bohatě zdobená růžicová okna. Za její stavbu se zasloužil král Jakub I. Aragonský, který během válčení s Araby ve strachu o svůj život slíbil, že pokud vyvázne, nechá postavit katedrálu vysvěcenou Panně Marii. Stavbu sice obaboutmallorcal už v roce 1229, nicméně její základy byly položeny až v roce 1310. I když byla dokončena v roce 1601, kvůli poničení a neustále se měnícím trendům prošla několika rekonstrukcemi a dnes je významnou dominantou Palmy.</p><br>
+
+            <h3>Pohoří Serra de Tramuntana</h3>
+
+            <img class="pohori" src="obrazky/pohori_200x250.png" alt="Pohori Serra de Tramuntana" height="200" width="240">
+
+                <p>Pohoří Serra de Tramuntana s nejvyšším vrcholem Puig Major, jež dosahuje 1 445 metrů nad mořem, se rozprostírá na severozápadě Mallorcy, odkud se táhne až k jejímu nejsevernějšímu okraji – mysu Cap de Formentor. Téměř všechny zdejší kouty jsou propojené pěšími stezkami, z nichž nejdelší je Trasa suchého kamene (Dry Stone Route), která v některých částech navazuje na staré cesty vytvořené horskými komunitami. Po těch tu zůstala i terasovitá pole a propracované systémy odvodu povrchové vody, které jsou jedinečnou ukázkou harmonického soužití člověka s přírodou. Díky těmto pozůstatkům, které navíc obklopuje mnoho unikátních živočišných i rostlinných druhů, bylo území horského masivu v roce 2011 zařazeno na seznam světového dědictví UNESCO.</p><br>
+                
+            <h3>Město Sóller</h3>
+
+            <img class="soller" src="obrazky/soller_200x250.png" alt="Mesto Soller" height="200" width="240">
+
+                <p>Sóller leží v severozápadní části ostrova Mallorca, v údolí plném pomerančovníkových a olivovníkových sadů, nad nimiž se tyčí jedny z nejvyšších vrcholů pohoří Serra de Tramuntana. Město získalo věhlas a prosperitu díky bohaté úrodě pomerančů, které se vyvážely a stále vyváží do mnoha evropských zemí. Název Sóller údajně vznikl z arabského slova "suliar", což znamená "zlatá mísa" a úrodné sóllerské údolí si toto označení vskutku zaslouží. Obchodníci, kteří zbohatli na obchodování s citrusovými plody, si nechávali v Sólleru postavit mnohdy až honosné domy.</p><br>
+   
+            <h3>Dračí jeskyně</h3>
+
+            <img class="jeskyne" src="obrazky/draci_jeskyne_200x250.png" alt="Draci jeskyne" height="200" width="240">
+
+                <p>Příroda toho na východním konci Mallorcy ukryla mnohem víc, o čemž vás přesvědčí jeskynní komplex, který najdete nedaleko městečka Porto Cristo. Celkem se skládá ze čtyř jeskyní – Černé a Bílé jeskyně, jeskyně Luise Salvadora a jeskyně Francouzů, které sahají do hloubky 25 metrů a společně dosahují délky 4 kilometrů. V jejích krápníkových útvarech můžete rozpoznat různé předměty jako například vlajku, kaktus nebo zasněženou horu. Prohlídková trasa, která je dlouhá 1 200 metrů, zahrnuje i plavbu po jezeře Martel pojmenovaném po otci moderní speleologie a jeho objeviteli Éduardu Alfredu Martelovi. Od roku 1935 je součástí plavby desetiminutový koncert klasické hudby doplněný o světelné efekty, který promění běžnou prohlídku jeskyně ve zcela unikátní zážitek.</p><br>
+
+            <h3>Cap de Formentor</h3>
+
+            <img class="formentor" src="obrazky/formentor_200x250.png" alt="Cap de Formentor" height="200" width="240">
+
+                <p>Pokud patříte mezi milovníky majáků, tak pro vás bude ideální volbou místo, které leží na nejsevernějším místě Mallorky. K majáku Formentor vede 15 kilometrů dlouhá cesta z přístavního města Port de Pollença. Četné skalní masivy a zakroucené serpentiny vás tady neminou. Budova majáku není veřejnosti přístupná, nicméně do jeho okolí není vstup nijak omezen. Najdete zde velké množství vyhlídkových míst a také pasoucí se kozy hned u silnice. V hlavní sezóně se jedná o turisticky vyhledávané místo. Při pěkném počasí je odtud vidět na sousední Menorku.</p><br><br><br>
+        </div> 
+    </section>
+
+
+    <section class="line1" id="beaches">
+        <div class="sirka_textu"><br>
+        <h2>NEJKRÁSNĚJŠÍ PLÁŽE&nbsp; <img class="plaz1" src="obrazky/drawing1.svg" height="30" width="30" alt="Ikona plaze"></h2><br>
+        
+            <h3>Platja de Formentor</h3>
+
+                <img class= "mapa12" src="obrazky/plaz2_200x200.png" alt= "Plaz Platja de Formentor" height="200" width="200">                
+
+                <p>Platja de Formentor, známá i pod názvem Cala Pi de la Posada, se nachází na severním pobřeží ostrova Mallorca a je to nejhojněji navštěvovaná pláž nejen na poloostrově Formentor, ale snad i na celé Mallorce. Romantická pláž v překrásné panenské přírodě byla oceněna modrou vlajkou za čistotu pláže a vody. Pláž je velmi dobře dostupná pěšky, autem i po moři. Směřují sem výletní autobusy a lodě z celého ostrova. aboutmallorca z nejkrásnějších písečných pláží má jedinou nevýhodu - v sezónu bývá často přeplněná. Navštivte ji spíše později, na sklonku dne, kdy sem nechodí tolik lidí a kouzelný podvečer vykouzlí krásné představení.</p><br><br><br>
+            
+            <h3>Puerto de Pollensa</h3>
+
+                <img class= "mapa11" src="obrazky/plaz1_200x200.png" alt= "Plaz Puerto de Pollensa" height="200" width="200">
+
+                <p>Přístav Puerto de Pollensa je velmi klidným místem. Nenachází se tu mnoho hotelů, a tak se není třeba obávat davů turistů. Lidé zde většinou spokojeně polehávají s knihou u vody a nikdo nepůsobí povyk. Spousta básníků a malířů se nechala inspirovat krásou Puerto de Pollensa. Zdejší promenáda s nádhernými domy ve středomořském stylu vás jistě uchvátí. Jsou tu i půvabné písčité pláže. Pláž se stinnou promenádou je dlouhá s jemným přechodem do vody a nabízí širokou škálu vodních sportů. Říká se, že je jednou z nejlepších oblastí pro windsurfing na Mallorce. Dlouhý úsek Playa de Llenaire v nádherné zátoce patří k nejvyhledávanějším zdejším plážím.</p><br><br>
+
+            <h3>Cala Estellencs</h3>
+
+                <img class= "mapa13" src="obrazky/plaz3_200x200.png" alt= "Plaz Cala Estellencs" height="200" width="200">
+
+                <p>Překrásná zátoka Cala Estellenc na severozápadním pobřeží Mallorky leží necelé interestingplaces kilometry od krásné horské vesničky Estellenc. Dokonalý půlkruhový záliv s průzračně čistou vodou se nachází na úpatí strmého útesu, ze kterého stékají ve formě malého vodopádu sladké proudy vody bystřiny Torrent de Son Fortuny. Cala Estellenc ukrývá malou oblázkovou pláž a je i útočištěm pro místní rybáře, kteří zde mají suché doky pro lodě, tzv. escars.</p><br><br><br><br><br>
+
+
+            <h3>Playa de Muro</h3>
+
+                <img class= "mapa13" src="obrazky/Playa_de_Muro.jpg" alt= "Plaz Cala Estellencs" height="200" width="200">
+
+                <p>Pláž Platja de Muro leží mezi městy Port d’Alcudia na severu a Can Picafort na jihu a patří do správy obce Muro. Zatímco směrem na Port d’Alcudii je celé území bohatě zastavěné domy a hotely, druhým směrem na Can Picafort je území zhruba o délce dvou kilometrů téměř bez civilizace. Celou oblast protíná silnice mezi oběma městy. Na jedné její straně je pláž a na druhé straně se z větší části rozkládá bažinatá oblast S’Albufera.</p><br><br><br><br><br>
+
+
+
+            <h3>Cala Mesquida</h3>
+
+                <img class= "mapa13" src="obrazky/Cala_Mesquida.jpg" alt= "Plaz Cala Estellencs" height="200" width="200">
+
+                <p>Cala Mesquida je pláž na severovýchodě ostrova Mallorca. Jsou zde postaveny hotely a apartmány. Místo patří správně k městu Capdepera.Pláž je dlouhá asi 300 metrů a jsou zde k dispozici lehátka a slunečníky. Pláž se zde pak mění v nádhernou krajinu s písečnými dunami, která přímo vybízí k procházce. Návštěvníci by ale měli být velmi opatrní a ohleduplní k místní fauně a flóře. Za návštěvu také stojí koňská farma, kde si lze vyzkoušet jízdu na koních a ponících. Především v letní sezóně je zde velké množství turistů.</p><br><br><br><br>
+
+
+
+            <h3>Playa de S'Amarador</h3>
+
+                <img class= "mapa13" src="obrazky/Playa_de_S'Amarador.jpg" alt= "Plaz Cala Estellencs" height="200" width="200">
+
+                <p>Pláž Platja s’Amarador patří mezi nejhezčí pláže na ostrově Mallorca. Leží u města Cala Mondrago, které se nachází v národním parku Parc Natural de Mondragó. V této oblasti nestojí žádné velké hotely, proto není zdejší pláž přeplněná jako ty ostatní v turistických letoviscích. Přesto sem ale jezdí velké množství lidí, a pokud by zde chtěl být člověk sám, podaří se mu to jen v ranních hodinách. K pláži se jede nejlépe autem buď přes Porto Pedro nebo Cala Rajadu (těsně před vjezdem do města je odbočka k pláži). K dispozici je zde parkoviště a z něj se musí jít ještě 500 metrů pěšky. Na pláži je bar, kde se dá příjemně posedět. Na samotné pláži není moc míst ve stínu, ten ale poskytne nedaleký piniový lesík, kde jsou i lavičky a člověk si zde může odpočinout.</p><br><br><br>
+
+                
+            <h3>Playa Santa Ponca</h3>
+
+                <img class= "mapa13" src="obrazky/plaz_ponca.jpg" alt= "Plaz Cala Estellencs" height="200" width="200">
+
+                <p>Městečko Santa Ponsa se nachází na západním pobřeží španělského ostrova Mallorca. Leží na poloviční cestě mezi hlavním městem a přístavem Puerto d´Andraitx (zhruba 20 km na obě strany), a tak je toto letovisko výborných výchozím bodem pro ponikání výletů do okolí. Najdete zde krásnou pláž s jemným bílým pískem. Zde si můžete vyzkoušet různé vodní sporty. Santa Ponsa a okolí je neskutečně malebné. Učarovalo i členy španělské královské rodiny, kteří si nechali nedaleko od Santa Ponsa postavit letní residenci.</p>
+
+        </div>
+    </section>
+
+
+    <section class="line2" id="weather">
+        <div class="sirka_textu"><br>
+        <h2>POČASÍ A PODNEBÍ&nbsp; <img class="plaz2" src="obrazky/drawing3.svg" width="30" height="30" alt="Ikona pocasi"></h2><br>
+        
+            <p class="pismo">Ostrov Mallorca má příjemné středomořské klima. Léta jsou na Mallorce velmi teplá a dešťové srážky jen zcela vyjímečné, průměrné teploty vzduchu se v letním období pohybují kolem 30 °C. Teplota vody v moři dosahuje až k 26 °C. Mallorské zimy jsou mírné a vlhké, s občasným deštěm, v zimním období prší průměrně 10 dní za měsíc. S dešťovými srážkami počítejte i na jaře a na podzim, mezi nejdeštivější měsíce patří říjen a listopad, kdy na ostrově prší průměrně 9 dní v měsíci. Se sněhem se setkáte jen v nejchladnějším období v roce, většinou však jen v horských oblastech Mallorky, k nimž patří pohoří Serra de Tramuntana na severozápadě a pohoří Serra de Llevant na jihovýchodě ostrova Mallorca.</p><br><br>
+
+        <img class="teplota_more" src="obrazky/teplota_more_450x330.svg" alt="Graf teploty more" width="450" height="330">&nbsp;&nbsp;&nbsp;&nbsp;
+        <img class="teplota_vzduchu" src="obrazky/teplota_vzduchu_450x330.svg" alt="Graf teploty vzduchu" width="450" height="330">
+        <p></p><br><br>
+        </div>
+    </section>
+
+
+
+    <section class="line1" id="orthodrome"><br>
+        <h2>VÝPOČET DÉLKY ORTODROMY&nbsp; <img class="plaz1" src="obrazky/drawing6.svg" width="30" height="30" alt="Ikona ortodromy"></h2><br>
+
+        <img class="ortodroma" src="obrazky/ortodroma.svg" width="320" height="320" alt="Ortodroma">
+    <form onsubmit="return vypocet()">
+        <p><b>První bod</b></p>
+        <p>zeměpisná šířka (0 - 90,00°)</p>
+        <input type="number" step = "any" id = "a1" min = 0>
+        <select class ="zem_sirka1">
+            <option class="sever" value = "sever">S</option>
+            <option class="jih" value = "jih">J</option>
+        </select>
+        <p>zeměpisná délka (0 - 180,00°)</p>
+        <input type="number" step = "any" id = "a2" min = 0>
+        <select class ="zem_delka1">
+            <option class = "vychod" value = "vychod">V</option>
+            <option class = "zapad" value = "zapad">Z</option>
+        </select><br><br>
+        <p><b>Druhý bod</b></p>
+        <p>zeměpisná šířka (0 - 90,00°)</p>
+        <input type="number" step = "any" id = "b1" min = 0>
+        <select class ="zem_sirka2">
+            <option class="sever" value = "sever">S</option>
+            <option class="jih" value = "jih">J</option>
+        </select>
+        <p>zeměpisná délka (0 - 180,00°)</p>
+        <input type="number" step = "any" id = "b2" min = 0>
+        <select class ="zem_delka2">
+            <option class="vychod" value = "vychod">V</option>
+            <option class="zapad" value = "zapad">Z</option>
+        </select><br>
+        <button type="submit">Vypočítat</button>
+    </form><br>
+
+    <p><b>Výsledná délka ortodromy je:</b></p>
+    <p id = "vysledek"><br></p><br>
+
+    <script>
+        "use strict";
+        let a1 = document.querySelector("#a1");
+        let a2 = document.querySelector("#a2");
+        let b1 = document.querySelector("#b1");
+        let b2 = document.querySelector("#b2");
+        let jih = document.querySelector(".jih");
+        let sever = document.querySelector(".sever");
+        let vychod = document.querySelector(".vychod");
+        let zapad = document.querySelector(".zapad");
+        let vysledek = document.querySelector("#vysledek");
+        let zem_sirka1 = document.querySelector(".zem_sirka1");
+        let zem_delka1 = document.querySelector(".zem_delka1");
+        let zem_sirka2 = document.querySelector(".zem_sirka2");
+        let zem_delka2 = document.querySelector(".zem_delka2");
+        
+
+        function validate(){
+            if (a1.value > 90){
+                alert("Zeměpisná šířka nemůže být větší než 90 stupňů!");
+                return true;
+            }
+            if (a2.value > 180){
+                alert("Zeměpisná délka nemůže být větší než 180 stupňů!");
+                return true;
+            }
+            if (b1.value > 90){
+                alert("Zeměpisná šířka nemůže být větší než 90 stupňů!");
+                return true;
+            }
+            if (b2.value > 180){
+                alert("Zeměpisná délka nemůže být větší než 180 stupňů!");
+                return true;
+            }
+            return false;
+        }
+
+        function jih_zapad(){
+            if (zem_sirka1.value == "jih"){
+                a1.value = -a1.value;
+            };
+            if (zem_delka1.value == "zapad"){
+                a2.value = -a2.value;
+            }
+            if (zem_sirka2.value == "jih"){
+                b1.value = -b1.value;
+            };
+            if (zem_delka2.value == "zapad"){
+                b2.value = -b2.value;
+            }
+        }
+
+        function vypocet(){
+            if (validate()){
+                vysledek.textContent = "nelze vypočítat";
+            }
+            else{
+                jih_zapad();
+                let x = Math.cos((90-(b1.value))* Math.PI / 180) * Math.cos((90-(a1.value))* Math.PI / 180) + Math.sin((90-(b1.value))* Math.PI / 180) * Math.sin((90-(a1.value))* Math.PI / 180) * Math.cos((b2.value-(a2.value))* Math.PI / 180);
+                let mezi_vys = (Math.acos((x))* 57.2957795);
+                let fin_vys = mezi_vys * 111.1949266;
+                vysledek.textContent = fin_vys.toFixed(3) + " km";
+            }
+            return false;
+        }
+
+    </script>
+    </section><br>
+    
+    <section class="line2" id="map"><br>
+        <h2>MAPA&nbsp; <img class="plaz1" src="obrazky/drawing5.svg" height="30" width="30" alt="Ikona plaze"></h2><br>
+        
+        
+        <div id="mapid"></div>
+
+        <script src="https://npmcdn.com/jquery@3.0.0/dist/jquery.min.js"></script>
+        <script src="https://npmcdn.com/leaflet@1.0.0-rc.1/dist/leaflet.js"></script>
+        <script src="https://rawgit.com/MarcChasse/leaflet.ScaleFactor/master/leaflet.scalefactor.min.js"></script>
+
+        <script src="dist/leaflet-control-boxzoom.js"></script>
+		<link rel="stylesheet" href="dist/leaflet-control-boxzoom.css" />
+		
+	
+       
+        <script>
+        "use sbeachesct";
+        const URL_OSM = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+        const URL = "https://cartodb-basemaps-{s}.global.ssl.fastly.net/" + "light_all/{z}/{x}/{y}.png";
+
+        const OSM = L.tileLayer(URL_OSM);
+        const GREY = L.tileLayer(URL);
+
+        let southWest = L.latLng(38, 2),
+            northEast = L.latLng(41, 4),
+            bounds = L.latLngBounds(southWest, northEast);
+
+        let mymap = L.map("mapid", {
+            center: [39.629903, 2.950511],
+            zoom: 9,
+            layers: [GREY, OSM], 
+            minZoom: 9,
+            maxBounds: bounds,
+        });
+        
+        let geojsonMarkerOptions = {
+            radius: 6,
+            fillColor: "#ffea00",
+            color: "#000",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.7
+        };
+
+        let geojsonMarkerOptions1 = {
+            radius: 6,
+            fillColor: "#ff5500",
+            color: "#000",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.7
+        };
+
+        function forEachFeature(feature, layer) {
+        let popupContent = "<p> <b>" + feature.properties.nazev + "<br>" + '<img src="'+ feature.properties.obr +'" style="width:100px;height:100px;">'+"</b></p>";
+        layer.bindPopup(popupContent);
+    }
+ 
+        fetch("https://gist.githubusercontent.com/anetryg/8f8645510035d0669055b44ae777c7c2/raw/dcbc82dcd04ec8ca68021dbbfee3a5e0d50e9e4e/plaze.geojson")
+        .then(response => response.json())
+        .then(data1 => {
+            const plaz = L.geoJSON(data1, {
+                onEachFeature: forEachFeature,
+                pointToLayer: function (feature, latlng) {
+                    return L.circleMarker(latlng, geojsonMarkerOptions);
+                }
+            }).addTo(mymap);
+
+		let baseMaps = {
+			"Open Street Map": OSM,
+			"Grayscale": GREY
+		};
+ 
+
+		fetch("https://gist.githubusercontent.com/anetryg/8744d7fdcb45c2387626d9a29d32e752/raw/3006d58081fe84463d5e45c4a464c0fc09346145/zaj_mista.geojson")
+        .then(response => response.json())
+        .then(data => {
+            const mist = L.geoJSON(data, {
+                onEachFeature: forEachFeature,
+                pointToLayer: function (feature, latlng) {
+                    return L.circleMarker(latlng, geojsonMarkerOptions1);
+                }
+            }).addTo(mymap);
+
+
+			let plaze_mista = {"Zajímavá místa": mist, "Nejkrásnější pláže": plaz};
+			L.control.layers(baseMaps, plaze_mista, {collapsed:false}).addTo(mymap);
+              
+        });
+        });
+
+        
+        L.control.scalefactor().addTo(mymap);
+        L.Control.boxzoom({ position:'topleft' }).addTo(mymap);
+
+        </script> 
+    </section>
+
+
+    <footer>
+        <p>© 2019, Aneta Ryglová</p>
+    </footer>
+    
+    
+
+</body>
+</html>
